@@ -1,16 +1,12 @@
 ---
-
+import MainTemplate from "../templates/MainTemplate.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainTemplate title="Home">
+    <section class="p-section bg-primary">
+        <div class="container">
+            <h1 class="h1 mb-150 txt-center">Welcome to the Core Theme 0.5</h1>
+            <p class="p txt-center">The Core Theme contains all the styling settings that I use on my own website. Each time I add a new style, component, or layout, the core theme will get updated</p>
+        </div>
+    </section>
+</MainTemplate>
