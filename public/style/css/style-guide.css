@@ -15,9 +15,9 @@
   --clr-black: rgb(4, 6, 7);
 
   /* Typography */
-  --lh-headings: 5.1875rem;
-  --lh-paragraph: 2rem;
-  --lh-headings-mobile: 3rem;
+  --lh-headings:  5.1875rem;
+  --lh-paragraph: 2.5rem;
+  --lh-headings-mobile: 3.5rem;
   --lh-paragraph-mobile: 2rem;
   --font-fam-headings: "Geist", sans-serif;
   --font-fam-paragraph: "Nunito", sans-serif;

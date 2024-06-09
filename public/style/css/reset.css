@@ -33,9 +33,9 @@ body {
   font-family: var(--font-fam-paragraph);
 }
 
-h1, h2,h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 , h6 {
+  line-height: var(--lh-headings);
     font-family: var(--font-fam-headings);
-    line-height: var(--lh-headings);
 }
 /* link defaults */
 a {
@@ -78,7 +78,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   body {
     line-height: var(--lh-paragraph-mobile);
   }
