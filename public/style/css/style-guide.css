@@ -8,14 +8,14 @@
   --clr-primary: rgb(59, 86, 121);
   --clr-seccondary: rgb(230, 116, 81);
   --clr-tertiary: rgb(41, 50, 63);
-  --clr-accent: rgb(148, 182, 205);
-  --clr-alt: rgb(237, 210, 202);
+  --clr-accent: rgb(215, 238, 240);
+  --clr-alt: rgb(148, 182, 205);
   --clr-light-orange: rgb(237, 210, 202);
   --clr-white: rgb(234, 235, 236);
   --clr-black: rgb(4, 6, 7);
 
   /* Typography */
-  --lh-headings:  5.1875rem;
+  --lh-headings: 5.1875rem;
   --lh-paragraph: 2.5rem;
   --lh-headings-mobile: 3.5rem;
   --lh-paragraph-mobile: 2rem;
@@ -87,7 +87,7 @@
   background-color: var(--clr-primary);
   color: var(--clr-white);
 }
-.bg-secconday {
+.bg-seccondary {
   background-color: var(--clr-seccondary);
   color: var(--clr-white);
 }
@@ -594,16 +594,6 @@
   gap: var(--sp-550);
 }
 /* Layout Tools */
-.container {
-  padding-inline: 2rem;
-  margin-inline: auto;
-  max-width: 80rem;
-}
-.narrow-container {
-  padding-inline: 2rem;
-  margin-inline: auto;
-  max-width: 750px;
-}
 
 .flex {
   display: flex;
@@ -658,6 +648,13 @@
 .items-justify {
   align-items: justify;
 }
+
+@media screen and (max-width: 988px) {
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (max-width: 768px) {
   /* Typography */
   .h1 {
