@@ -5,18 +5,18 @@ interface Props {
 }
 const {text = "Click Me", link} = Astro.props;
 ---
-<a href={link} class="btn-primary">{text}</a>
+<a href={link} class="btn-seccondary">{text}</a>
 
 <style>
-    .btn-primary {
-        background-color: var(--clr-primary);
+    .btn-seccondary {
+        background-color: var(--clr-seccondary);
         padding: var(--sp-100) var(--sp-150);
         color: var(--clr-white);
         font-family: var(--font-fam-headings);
         font-weight: 700;
         border-radius: var(--sp-50);
     }
-    .btn-primary:hover,.btn-primary:focus {
-        opacity: 80%
+    .btn-seccondary:hover,.btn-seccondary:focus {
+        opacity: 80%;
     }
 </style>

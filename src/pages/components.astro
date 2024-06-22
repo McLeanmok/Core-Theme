@@ -1,9 +1,15 @@
 ---
+import BlockImput from "../components/BlockImput.astro";
 import BtnPrimary from "../components/BtnPrimary.astro";
+import BtnSeccondary from "../components/BtnSeccondary.astro";
+import CardPrimary from "../components/CardPrimary.astro";
+import CardSeccondary from "../components/CardSeccondary.astro"
+import CardTertiary from "../components/CardTertiary.astro";
 import Container from "../components/Container.astro";
 import FlexBox from "../components/FlexBox.astro";
 import Grid2 from "../components/Grid2.astro";
 import Grid3 from "../components/Grid3.astro";
+import InlineFormImput from "../components/InlineFormImput.astro";
 import MainTemplate from "../templates/MainTemplate.astro";
 ---
 
@@ -45,7 +51,32 @@ import MainTemplate from "../templates/MainTemplate.astro";
             <h2 class="j2 mb-200">Buttons</h2>
             <FlexBox>
                 <BtnPrimary text="Click Me" link="#" />
+                <BtnSeccondary text="Click Me" link="#" />
             </FlexBox>
         </Container>
      </section>
+     <!-- Cards -->
+      <section class="p-section bg-white">
+        <Container>
+            <h2 class="h2 clr-tertiary mb-150">Cards</h2>
+            <FlexBox>
+                <CardPrimary />
+                <CardSeccondary />
+                <CardTertiary />
+            </FlexBox>
+        </Container>
+      </section>
+      <section class="p-section bg-accent txt-center">
+        <Container>
+            <div class="mb-150">
+                <h2 class="h2">Forms</h2>
+            </div>
+            
+              <form action="" class="flex justify-center gp-200">
+                <InlineFormImput text="First Name" aria="First Name" />
+                <BlockImput text="Message" aria="Enter Your Message" />
+              </form>
+            
+        </Container>
+      </section>
 </MainTemplate>
